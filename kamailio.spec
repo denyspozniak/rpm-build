@@ -221,7 +221,7 @@ Source0:    https://github.com/kamailio/kamailio/archive/master.tar.gz
 URL:        http://kamailio.org/
 Vendor:     kamailio.org
 
-BuildRoot:  %{_tmppath}/kamailio-master-buildroot
+BuildRoot:  %{_tmppath}/kamailio-master
 
 Conflicts:  kamailio-acc_json < %ver
 Conflicts:  kamailio-auth-ephemeral < %ver, kamailio-bdb < %ver
@@ -1009,7 +1009,7 @@ UUID module for Kamailio.
 
 
 %prep
-%setup -n %{name}-%{ver}
+%setup -n kamailio-master
 
 ln -s ../obs pkg/kamailio/fedora/27
 ln -s ../obs pkg/kamailio/fedora/28
