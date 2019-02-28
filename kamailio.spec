@@ -215,10 +215,12 @@ Release:    %rel
 Packager:   Peter Dunkley <peter@dunkley.me.uk>
 License:    GPL-2.0
 Group:      %{PKGGROUP}
+#Source:     http://kamailio.org/pub/kamailio/%{ver}/src/%{name}-%{ver}_src.tar.gz
 Source0:    https://github.com/kamailio/kamailio/archive/master.tar.gz
 URL:        http://kamailio.org/
 Vendor:     kamailio.org
-BuildRoot:  %{_tmppath}/kamailio-master-buildroot
+BuildRoot:  %{_tmppath}/%{name}-%{ver}-buildroot
+#BuildRoot:  %{_tmppath}/kamailio-master-buildroot
 Conflicts:  kamailio-acc_json < %ver
 Conflicts:  kamailio-auth-ephemeral < %ver, kamailio-bdb < %ver
 Conflicts:  kamailio-carrierroute < %ver, kamailio-cpl < %ver
